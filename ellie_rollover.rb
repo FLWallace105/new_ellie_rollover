@@ -99,8 +99,9 @@ module EllieRollover
                 end
                 puts "Done with page #{page}"
                 puts temp_collection.inspect
-                mynow = DateTime.now.strftime("%B %Y")
-                myhandle = mynow.downcase
+                mynow = Time.zone.now.strftime("%B %Y")
+                myhandle = mynow.downcase.gsub(/\s/i, "-")
+                puts "myhandle = #{myhandle}"
                 temp_collection.attributes['title'] = temp_collection.attributes['title'] + " #{mynow}"
                 temp_collection.attributes['handle'] = temp_collection.attributes['handle'] + "-#{myhandle}"
                 temp_collection.save
