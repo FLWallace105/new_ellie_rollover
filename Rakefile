@@ -18,5 +18,18 @@ namespace :ellie_rollover do
         EllieRollover::NextMonth.new.setup_rollover
     end
 
+    #rollover_navigation
+    desc "change redirects"
+    task :change_redirects do |t|
+        EllieRollover::NextMonth.new.rollover_navigation
+    end
+
+    #rollover_collection
+    desc "rollover collections"
+    task :rollover_custom_collections do |t|
+        EllieRollover::NextMonth.new.rollover_collection
+
+    end
+
 
 end
