@@ -9,6 +9,7 @@ gem "sinatra-activerecord"
 gem 'pg'
 gem "activesupport"
 gem "rake"
+gem "rack", ">= 2.0.6"
 #gem "redis", "=3.3.5"
 #gem 'pry', '~> 0.11.3'
 gem 'shopify_api'

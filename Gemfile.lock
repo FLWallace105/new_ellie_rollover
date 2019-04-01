@@ -36,7 +36,7 @@ GEM
     multi_xml (0.6.0)
     mustermann (1.0.2)
     pg (1.0.0)
-    rack (2.0.5)
+    rack (2.0.6)
     rack-protection (2.0.3)
       rack
     rake (12.3.1)
@@ -66,6 +66,7 @@ DEPENDENCIES
   dotenv
   httparty
   pg
+  rack (>= 2.0.6)
   rake
   shopify_api
   sinatra (~> 2.0.2)
